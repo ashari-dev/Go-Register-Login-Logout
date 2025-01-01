@@ -8,10 +8,10 @@ import (
 )
 
 func DB() *pgx.Conn {
-	host := `localhost`
-	port := `5432`
+	host := `103.93.58.89`
+	port := `54326`
 	user := `postgres`
-	pass := ``
+	pass := `123`
 	db := `trial`
 
 	conn, err := pgx.Connect(context.Background(), "postgresql://"+user+":"+pass+"@"+host+":"+port+"/"+db+"?sslmode=disable")
